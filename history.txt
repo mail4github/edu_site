@@ -1,0 +1,1000 @@
+  213  git remote add-url origin git@github.com:mail4github/test_task_laravel.git
+  214  git remote add origin git@github.com:mail4github/test_task_laravel.git
+  215  git branch -M main
+  216  git push -u origin main
+  217  git clone git@github.com:mail4github/test_task_laravel.git
+  218  git push -u origin main
+  219  git status
+  220  git fetch origin master
+  221  git merge origin master
+  222  git branch -M master
+  223  git push -u origin master
+  224  git remote add origin git@github.com:mail4github/test_task_laravel2.git
+  225  git remote set-url origin git@github.com:mail4github/test_task_laravel2.git
+  226  git branch -M main
+  227  git push -u origin main
+  228  php artisan migrate
+  229  git status
+  230  git add database/migrations/2024_01_17_000001_creating_transactions_table.php
+  231  git commit -m "added migrations based on the database schema"
+  232  git push
+  233  git status
+  234  git add app/Models/Transaction.php
+  235  git commit -m "added models and connections between them based on the database schema"
+  236  git push
+  237  cd /var/www/test_task_laravel/test_task_bookkeeping
+  238  php artisan make:controller TransactionController
+  239  php artisan make:controller Auth/RegisterController
+  240  find /var/www/* -type d -exec chown -R root {} \;
+  241  find /var/www/* -type f -exec chown -R root {} \;
+  242  find /var/www/* -type d -exec chmod augo+rwx {} \;
+  243  find /var/www/* -type f -exec chmod augo+rwx {} \;
+  244  cd /etc/apache2/sites-available
+  245  ls
+  246  nano 000-default.conf
+  247  service apache2 restart
+  248  nano 000-default.conf
+  249  service apache2 restart
+  250  nano 000-default.conf
+  251  service apache2 restart
+  252  systemctl status apache2.service
+  253  nano 000-default.conf
+  254  service apache2 restart
+  255  find /var/www/* -type d -exec chown -R root {} \;
+  256  find /var/www/* -type f -exec chown -R root {} \;
+  257  find /var/www/* -type d -exec chmod augo+rwx {} \;
+  258  find /var/www/* -type f -exec chmod augo+rwx {} \;
+  259  service apache2 restart
+  260  nano testtask.com
+  261  nano 000-default.conf
+  262  service apache2 restart
+  263  cd ..
+  264  ls
+  265  nano apache2.conf
+  266  echo "<IfModule mpm_prefork_module>" >> /etc/apache2/apache2.conf
+  267  echo "        StartServers     100" >> /etc/apache2/apache2.conf
+  268  echo "        MinSpareServers  20" >> /etc/apache2/apache2.conf
+  269  echo "        MaxSpareServers  10" >> /etc/apache2/apache2.conf
+  270  echo "        MaxClients       500" >> /etc/apache2/apache2.conf
+  271  echo "        ServerLimit      500" >> /etc/apache2/apache2.conf
+  272  echo "        MaxRequestsPerChild   100" >> /etc/apache2/apache2.conf
+  273  echo "        MaxMemFree       10" >> /etc/apache2/apache2.conf
+  274  echo "</IfModule>" >> /etc/apache2/apache2.conf
+  275  echo "LimitRequestFieldSize   1638000" >> /etc/apache2/apache2.conf
+  276  echo "Include sites-available/*" >> /etc/apache2/apache2.conf
+  277  echo "<Directory /var/www/>" >> /etc/apache2/apache2.conf
+  278  echo "       AllowOverride All" >> /etc/apache2/apache2.conf
+  279  echo "</Directory>" >> /etc/apache2/apache2.conf
+  280  echo "Listen 443" >> /etc/apache2/apache2.conf
+  281  echo "LoadModule ssl_module /usr/lib/apache2/modules/mod_ssl.so" >> /etc/apache2/apache2.conf
+  282  nano apache2.conf
+  283  service apache2 restart
+  284  cd /etc/apache2/sites-available
+  285  ls
+  286  nano testtask.com
+  287  cd ..
+  288  ls
+  289  nano apache2.conf
+  290  nano /etc/apache2/sites-available/testtask.com
+  291  service apache2 restart
+  292  sudo a2enmod rewrite
+  293  systemctl restart apache2
+  294  nano /etc/apache2/sites-available/testtask.com
+  295  cd /var/www/test_task_laravel/test_task_bookkeeping
+  296  composer require laravel/ui
+  297  find /var/www/* -type d -exec chown -R root {} \;
+  298  find /var/www/* -type f -exec chown -R root {} \;
+  299  find /var/www/* -type d -exec chmod augo+rwx {} \;
+  300  find /var/www/* -type f -exec chmod augo+rwx {} \;
+  301  php artisan make:controller Auth/LoginController
+  302  nano /etc/mysql/my.cnf
+  303  nano /etc/php/8.1/apache2/php.ini
+  304  service mysql restart
+  305  service mysql start
+  306  systemctl status mysql.service
+  307  journalctl -xeu mysql.service
+  308  nano /etc/php/8.1/apache2/php.ini
+  309  top
+  310  reboot
+  311  top
+  312  cd /var/www/test_task_laravel/test_task_bookkeeping
+  313  git status
+  314  git add app/Http/Controllers/Auth/*
+  315  git add app/Http/Controllers/TransactionController.php
+  316  git status
+  317  git commit -m "added api register and login"
+  318  git push
+  319  git add app/Models/Transaction.php app/Models/User.php composer.json composer.lock database/migrations/2024_01_17_000001_creating_transactions_table.php routes/api.php
+  320  git status
+  321  git add public/.htaccess
+  322  git commit -m "made changes"
+  323  git push
+  324  top
+  325  php artisan config:cache
+  326  php artisan route:list
+  327  php artisan config:cache
+  328  php artisan route:list
+  329  top
+  330  service mysql stop
+  331  reboot
+  332  cd /var/www/test_task_laravel/test_task_bookkeeping
+  333  git status
+  334  git commit -m "added api to create new transaction"
+  335  git add app/Http/Controllers/TransactionController.php config/auth.php routes/api.php
+  336  git commit -m "added api to create new transaction"
+  337  git status
+  338  git push
+  339  git status
+  340  git add * :/
+  341  git status
+  342  git remove public/tmp.html
+  343  git restore public/tmp.html
+  344  git status
+  345  git restore --staged  public/tmp.html
+  346  git status
+  347  php artisan route:list
+  348  top
+  349  git add * :/
+  350  git status
+  351  git commit -m "added api to read a transaction"
+  352  git push
+  353  git add * :/
+  354  git status
+  355  git commit -m "added api to get list of transactions"
+  356  git push
+  357  find -name "facades" -type d
+  358  find . -name "facades" -type d
+  359  find . -name "facade" -type d
+  360  find . -name "*facade*"
+  361  grep -r -F --inclde="*.php" "class Mail" *
+  362  grep -r -F --include="*.php" "class Mail" *
+  363  php artisan log:read
+  364  cat storage/logs/laravel.log
+  365  php artisan log:read
+  366  php artisan log:tail
+  367  cat storage/logs/laravel.log
+  368  git status
+  369  git add * :/
+  370  git status
+  371  git commit -m "added code to which is sending a message by email and log event"
+  372  git push
+  373  composer require pusher/pusher-php-server
+  374  npm install --save laravel-echo pusher-js
+  375  sudo apt install npm
+  376  npm install --save laravel-echo pusher-js
+  377  php artisan make:event TransactionCreated
+  378  find /var/www/* -type d -exec chown -R root {} \;
+  379  find /var/www/* -type f -exec chown -R root {} \;
+  380  find /var/www/* -type d -exec chmod augo+rwx {} \;
+  381  find /var/www/* -type f -exec chmod augo+rwx {} \;
+  382  git status
+  383  git add * :/
+  384  git status
+  385  git commit -m "added code which is sending a notify to the frontend using sockets"
+  386  git push
+  387  cd /var/www/test_task_laravel/test_task_bookkeeping
+  388  git satus
+  389  git status
+  390  git add * :/
+  391  git status
+  392  git commit -m "added cooments of classes and methods in PHPDoc"
+  393  git push
+  394  composer require rakutentech/laravel-request-docs
+  395  php artisan vendor:publish --tag=request-docs-config
+  396  php artisan route:cache
+  397  git status
+  398  php artisan vendor:publish --tag=request-docs-config
+  399  php artisan route:cache
+  400  git status
+  401  git add * :/
+  402  git status
+  403  git commit -m "connected laravel-request-docs the automatic API documentation generation for Laravel"
+  404  git push
+  405  php artisan test
+  406  git status
+  407  git add * :/
+  408  git status
+  409  git commit -m "added unit test testShowMethodReturns404ForNonexistentTransaction"
+  410  git push
+  411  git status
+  412  git add * :/
+  413  git status
+  414  git commit -m "chcnged readme.md"
+  415  git push
+  416  cd /var/www/test_task_laravel/test_task_bookkeeping
+  417  git status
+  418  git add * :/
+  419  git status
+  420  git commit -m "altered readme.md"
+  421  git push
+  422  git add * :/
+  423  git commit -m "altered readme.md"
+  424  git push
+  425  git add * :/
+  426  git commit -m "altered readme.md"
+  427  git push
+  428  reboot
+  429  cd /var/www/test_task_laravel/test_task_bookkeeping
+  430  php artisan passport:install
+  431  php artisan passport:install --force
+  432  git status
+  433  git add * :/
+  434  git status
+  435  git commit -m "changed class LoginController according SOLID"
+  436  git push
+  437  php artisan make:request TransactionRequest
+  438  find /var/www/* -type d -exec chown -R root {} \;
+  439  find /var/www/* -type f -exec chown -R root {} \;
+  440  find /var/www/* -type d -exec chmod augo+rwx {} \;
+  441  find /var/www/* -type f -exec chmod augo+rwx {} \;
+  442  git status
+  443  git add * :/
+  444  git status
+  445  git add * :/
+  446  git status
+  447  git commit -m "changed class TransactionController according SOLID"
+  448  git push
+  449  cd /var/www/bot_node_parser2 && source /var/www/bot_node_parser2/bin/activate
+  450  python3 pithiia_node_parser.py
+  451  pkill "python3"
+  452  python3 pithiia_node_parser.py
+  453  sudo apt install sqlite3
+  454  ls
+  455  sqlite /var/www/bot_node_parser2/telegram_channels.db
+  456  sqlite3 /var/www/bot_node_parser2/telegram_channels.db
+  457  python3 pithiia_node_parser.py
+  458  cd /var/www/bot_node_parser2 && source /var/www/bot_node_parser2/bin/activate
+  459  python3 pithiia_node_parser.py
+  460  gcc
+  461  cd /var/www
+  462  ls
+  463  mkdir tmp_cpp_apostolov
+  464  chmod 777 tmp_cpp_apostolov
+  465  ls
+  466  cd tmp_cpp_apostolov
+  467  gcc pong.c
+  468  ls -l -a
+  469  a.out
+  470  gcc pong.c -o pong
+  471  ls
+  472  ls -l -a
+  473  ./pong 1024 > outputfile.c
+  474  ls
+  475  ./pong 1024
+  476  gcc code2.c
+  477  cd /var/www/tmp_cpp_apostolov
+  478  gcc code2.c
+  479  ls -l -a
+  480  gcc code2.c
+  481  gcc -o code2 code2.c -lm
+  482  ls -l -a
+  483  code2
+  484  ./code2 1024 > outputfile.c
+  485  ./code2 1024
+  486  ls -l -a
+  487  ./code2 1024
+  488  gcc -o code2 code2.c -lm -Wall -Wextra -Werror
+  489  gcc -o code2 code2.c -Wall -Wextra -Werror
+  490  gcc -o code2 code2.c -Wall -Wextra -Werror -lm
+  491  php -v
+  492  cd /var/www
+  493  ls
+  494  cd tmp_cpp_apostolov
+  495  ls
+  496  mkdir game_of_life
+  497  top
+  498  ls
+  499  chmod 777 game_of_life
+  500  cd game_of_life
+  501  ls
+  502  chmod 777 *
+  503  ls -l a-
+  504  ls -l -a
+  505  gcc -o game_of_life.c game_of_life -Wall -Wextra -Werror -l
+  506  gcc -o game_of_life.c game_of_life -Wall -Wextra -Werror -lm
+  507  gcc -o game_of_life.c game_of_life -lm
+  508  gcc game_of_life.c -o game_of_life
+  509  ls
+  510  gcc game_of_life.c -o game_of_life
+  511  ls -l -a
+  512  ./game_of_life 1024
+  513  cd /var/www/tmp_cpp_apostolov
+  514  cd /var/www/tmp_cpp_apostolov/game_of_life
+  515  gcc test1.c -o test1
+  516  ./test1 1024
+  517  grep -r -i -F --include="*.php" "request-docs" /var/www/*
+  518  find
+  519  find api.json
+  520  find -r api.json
+  521  find --help
+  522  find /var/www/* api.json
+  523  find /var/www/ -type d -name "api.json"
+  524  find /var/www/ -type f -name "api.json"
+  525  grep -r -i -F --include="*.*" "personal-access-tokens" /var/www/test_task_laravel/test_task_bookkeeping/*
+  526  find /var/www/ -type f -name "*.json"
+  527  find /var/www/test_task_laravel/test_task_bookkeeping/ -type f -name "*.json"
+  528  top
+  529  sudo systemctl start mysql.service
+  530  top
+  531  sudo systemctl stop mysql.service
+  532  top
+  533  sudo systemctl disable mysql.service
+  534  sudo systemctl enable mysql.service
+  535  top
+  536  sudo systemctl disable mysql.service
+  537  reboot
+  538  top
+  539  service mysql stop
+  540  sudo apt update
+  541  sudo apt install postgresql postgresql-contrib
+  542  php -v
+  543  sudo apt-get -y install libapache2-mod-php 
+  544  sudo systemctl start postgresql.service
+  545  apt-get install php-pgsql
+  546  echo "extension=pdo_pgsql" >> /etc/php/8.2/apache2/php.ini
+  547  echo "extension=pdo_pgsql" >> /etc/php/8.1/apache2/php.ini
+  548  nano /etc/postgresql/14/main/postgresql.conf
+  549  nano /etc/postgresql/14/main/pg_hba.conf
+  550  sudo -u postgres createdb app
+  551  psql -d postgres -U pgg_superadmins
+  552  top
+  553  pkill "python3"
+  554  sudo systemctl start postgresql.service
+  555  top
+  556  psql -d postgres -U pgg_superadmins
+  557  psql -d postgres
+  558  sudo systemctl start postgresql.service
+  559  sudo systemctl restart postgresql.service
+  560  psql -d postgres
+  561  sudo apt install postgresql postgresql-contrib
+  562  df -h
+  563  sudo -u postgres psql
+  564  sudo -u postgres createdb app
+  565  sudo systemctl stop postgresql.service
+  566  sudo systemctl disable postgresql.service
+  567  sudo systemctl enable mysql.service
+  568  sudo systemctl start mysql.service
+  569  top
+  570  cd /var/www/
+  571  ls
+  572  cd test_task_laravel
+  573  composer create-project laravel/laravel 0601_WVLI_parser
+  574  ls
+  575  find * -type d -exec chown -R root {} \;
+  576  find * -type f -exec chown -R root {} \;
+  577  find * -type d -exec chmod augo+rwx {} \;
+  578  find * -type f -exec chmod augo+rwx {} \;
+  579  ls
+  580  cd 0601_WVLI_parser
+  581  ls
+  582  git clone -b base_html_generator https://git.extensionforces.com/extfo-vda/0601_wvli_parser.git
+  583  ls -l -a
+  584  cd ..
+  585  ls
+  586  rm -r 0601_WVLI_parser
+  587  git clone -b base_html_generator https://git.extensionforces.com/extfo-vda/0601_wvli_parser.git
+  588  find * -type d -exec chown -R root {} \;
+  589  find * -type f -exec chown -R root {} \;
+  590  find * -type d -exec chmod augo+rwx {} \;
+  591  find * -type f -exec chmod augo+rwx {} \;
+  592  ls
+  593  cd 0601_wvli_parser
+  594  composer install
+  595  composer update
+  596  cd /etc/apache2/sites-available/
+  597  ls
+  598  echo "<VirtualHost *:80>" >> /etc/apache2/sites-available/0601-wvli-parser.com
+  599  echo "    ServerName 0601-wvli-parser.com" >> /etc/apache2/sites-available/0601-wvli-parser.com
+  600  echo "    ServerAlias www.0601-wvli-parser.com" >> /etc/apache2/sites-available/0601-wvli-parser.com
+  601  echo "    DocumentRoot /var/www/test_task_laravel/0601_wvli_parser/public
+  602  echo "    <Directory /var/www/test_task_laravel/0601_wvli_parser/public>
+  603  echo "            AllowOverride None
+  604  echo "            Require all granted
+  605  echo "            FallbackResource /index.php
+  606  echo "    </Directory>
+  607  echo "</VirtualHost>" >> /etc/apache2/sites-available/0601-wvli-parser.com
+  608  ls
+  609  nano 0601-wvli-parser.com
+  610  rm 0601-wvli-parser.com
+  611  echo "<VirtualHost *:80>" >> /etc/apache2/sites-available/0601-wvli-parser.com
+  612  echo "    ServerName 0601-wvli-parser.com" >> /etc/apache2/sites-available/0601-wvli-parser.com
+  613  echo "    ServerAlias www.0601-wvli-parser.com" >> /etc/apache2/sites-available/0601-wvli-parser.com
+  614  echo "    DocumentRoot /var/www/test_task_laravel/0601_wvli_parser/public" >> /etc/apache2/sites-available/somesite.com
+  615  echo "    <Directory /var/www/test_task_laravel/0601_wvli_parser/public>" >> /etc/apache2/sites-available/somesite.com
+  616  echo "            AllowOverride None" >> /etc/apache2/sites-available/somesite.com
+  617  echo "            Require all granted" >> /etc/apache2/sites-available/somesite.com
+  618  echo "            FallbackResource /index.php" >> /etc/apache2/sites-available/somesite.com
+  619  echo "    </Directory>" >> /etc/apache2/sites-available/somesite.com
+  620  echo "</VirtualHost>" >> /etc/apache2/sites-available/0601-wvli-parser.com
+  621  nano 0601-wvli-parser.com
+  622  ls
+  623  rm 0601-wvli-parser.com somesite.com
+  624  ls
+  625  echo "<VirtualHost *:80>" >> /etc/apache2/sites-available/0601-wvli-parser.com
+  626  echo "    ServerName 0601-wvli-parser.com" >> /etc/apache2/sites-available/0601-wvli-parser.com
+  627  echo "    ServerAlias www.0601-wvli-parser.com" >> /etc/apache2/sites-available/0601-wvli-parser.com
+  628  echo "    DocumentRoot /var/www/test_task_laravel/0601_wvli_parser/public" >> /etc/apache2/sites-available/0601-wvli-parser.com
+  629  echo "    <Directory /var/www/test_task_laravel/0601_wvli_parser/public>" >> /etc/apache2/sites-available/0601-wvli-parser.com
+  630  echo "            AllowOverride None" >> /etc/apache2/sites-available/0601-wvli-parser.com
+  631  echo "            Require all granted" >> /etc/apache2/sites-available/0601-wvli-parser.com
+  632  echo "            FallbackResource /index.php" >> /etc/apache2/sites-available/0601-wvli-parser.com
+  633  echo "    </Directory>" >> /etc/apache2/sites-available/0601-wvli-parser.com
+  634  echo "</VirtualHost>" >> /etc/apache2/sites-available/0601-wvli-parser.com
+  635  ls
+  636  nano 0601-wvli-parser.com
+  637  service apache2 restart
+  638  ip a
+  639  service apache2 restart
+  640  top
+  641  ls
+  642  cd /var/www/
+  643  ls
+  644  cd test_task_laravel
+  645  ls
+  646  cp test_task_bookkeeping\.env 0601_wvli_parser\.env
+  647  cp test_task_bookkeeping/.env 0601_wvli_parser/.env
+  648  cd 0601_wvli_parser
+  649  ls
+  650  php artisan migrate
+  651  sudo systemctl disable mysql.service
+  652  sudo systemctl stop mysql.service
+  653  sudo systemctl enable postgresql.service
+  654  sudo systemctl start postgresql.service
+  655  php artisan migrate
+  656  nano /etc/postgresql/14/main/pg_hba.conf
+  657  service postgresql restart
+  658  php artisan migrate
+  659  nano /etc/postgresql/14/main/pg_hba.conf
+  660  service postgresql restart
+  661  php artisan migrate
+  662  top
+  663  psql
+  664  service postgresql start
+  665  psql
+  666  psql -d postgres
+  667  psql -d postgres -U pgg_superadmins
+  668  sudo -u postgres psql
+  669  cd /var/www/test_task_laravel/0601_wvli_parser
+  670  php artisan migrate
+  671  service postgresql stop
+  672  service postgresql start
+  673  grep -r -F --include="*.php" "addProduct" *
+  674  top
+  675  sudo su app
+  676  nano /etc/passwd
+  677  service postgresql start
+  678  top
+  679  find / -iname kdevtmpfsi* -exec rm -fv {} \;
+  680  find / -iname kinsing* -exec rm -fv {} \;
+  681  top
+  682  cd /var/spool/cron/
+  683  ls
+  684  cd crontabs
+  685  ls -l -a
+  686  nano postgres
+  687  rm postgres
+  688  touch /tmp/kdevtmpfsi && touch /tmp/kinsing
+  689  echo "kdevtmpfsi is fine now" > /tmp/kdevtmpfsi
+  690  echo "kinsing is fine now" > /tmp/kinsing
+  691  chmod 0444 /tmp/kdevtmpfsi
+  692  chmod 0444 /tmp/kinsing
+  693  top
+  694  pkill kdevtmpfsi
+  695  top
+  696  composer update facade/ignition
+  697  cd /var/www/test_task_laravel/0601_wvli_parser
+  698  composer update facade/ignition
+  699  top
+  700  pkill "kdevtmpfsi12740"
+  701  top
+  702  cd /tmp
+  703  ls
+  704  ls -l -a
+  705  cd .font-unix
+  706  ls
+  707  top
+  708  cd /var/spool/
+  709  ls -l -a
+  710  cd cron
+  711  pkill "kdevtmpf"
+  712  find / -iname kdevtmpfsi* -exec rm -fv {} \;
+  713  find / -iname kinsing* -exec rm -fv {} \;
+  714  rm /var/spool/cron/crontabs/www-data
+  715  touch /tmp/kdevtmpfsi && touch /tmp/kinsing
+  716  echo "kdevtmpfsi is fine now" > /tmp/kdevtmpfsi
+  717  echo "kinsing is fine now" > /tmp/kinsing
+  718  chmod 0444 /tmp/kdevtmpfsi
+  719  chmod 0444 /tmp/kinsing
+  720  composer update facade/ignition
+  721  top
+  722  cd /var/
+  723  ls
+  724  cd tmp
+  725  ls
+  726  top
+  727  su app
+  728  /etc/shadow
+  729  top
+  730  pkill "kdevtmpf"
+  731  cd /tmp/
+  732  cd /home
+  733  /etc/shadow
+  734  /etc/passwd
+  735  nano /etc/passwd
+  736  passwd postgres
+  737  pkill "kdevtmpf"
+  738  find / -iname kdevtmpfsi* -exec rm -fv {} \;
+  739  find / -iname kinsing* -exec rm -fv {} \;
+  740  rm /var/spool/cron/crontabs/www-data
+  741  touch /tmp/kdevtmpfsi && touch /tmp/kinsing
+  742  echo "kdevtmpfsi is fine now" > /tmp/kdevtmpfsi
+  743  echo "kinsing is fine now" > /tmp/kinsing
+  744  chmod 0444 /tmp/kdevtmpfsi
+  745  chmod 0444 /tmp/kinsing
+  746  composer update facade/ignition
+  747  cd /tmp/
+  748  visudo
+  749  cd /etc/sudoers.d
+  750  cd /tmp
+  751  pkill "kdevtmpf"
+  752  find / -iname kdevtmpfsi* -exec rm -fv {} \;
+  753  find / -iname kinsing* -exec rm -fv {} \;
+  754  rm /var/spool/cron/crontabs/www-data
+  755  touch /tmp/kdevtmpfsi && touch /tmp/kinsing
+  756  echo "kdevtmpfsi is fine now" > /tmp/kdevtmpfsi
+  757  echo "kinsing is fine now" > /tmp/kinsing
+  758  chmod 0444 /tmp/kdevtmpfsi
+  759  chmod 0444 /tmp/kinsing
+  760  composer update facade/ignition
+  761  ls -l -a
+  762  pkill "kdevtmpf"
+  763  find / -iname kdevtmpfsi* -exec rm -fv {} \;
+  764  find / -iname kinsing* -exec rm -fv {} \;
+  765  rm /var/spool/cron/crontabs/www-data
+  766  touch /tmp/kdevtmpfsi && touch /tmp/kinsing
+  767  echo "kdevtmpfsi is fine now" > /tmp/kdevtmpfsi
+  768  echo "kinsing is fine now" > /tmp/kinsing
+  769  chmod 0444 /tmp/kdevtmpfsi
+  770  chmod 0444 /tmp/kinsing
+  771  composer update facade/ignition
+  772  pkill "kdev"
+  773  find / -iname kdevtmpfsi* -exec rm -fv {} \;
+  774  find / -iname kinsing* -exec rm -fv {} \;
+  775  rm /var/spool/cron/crontabs/www-data
+  776  touch /tmp/kdevtmpfsi && touch /tmp/kinsing
+  777  echo "kdevtmpfsi is fine now" > /tmp/kdevtmpfsi
+  778  echo "kinsing is fine now" > /tmp/kinsing
+  779  chmod 0444 /tmp/kdevtmpfsi
+  780  chmod 0444 /tmp/kinsing
+  781  composer update facade/ignition
+  782  rm kdevtmpfsi1854789454
+  783  find / -iname kdevtmpfsi* -exec rm -fv {} \;
+  784  find / -iname kdevtmpfsi -exec rm -fv {} \;
+  785  find / -iname kdevtmpfsi* -exec rm -fv {} \;
+  786  find / kdevtmpfsi* -exec rm -fv {} \;
+  787  ls -l -a
+  788  find / -iname kdevtmpfsi -exec rm -fv {} \;
+  789  ls -l -a
+  790  find kdevtmpfsi* -type f -exec chmod augo+r {} \;
+  791  find kdevtmpfsi*.* -type f -exec chmod augo+r {} \;
+  792  find "kdevtmpfsi*.*" -type f -exec chmod augo+r {} \;
+  793  find "kdevtmpfsi*" -type f -exec chmod augo+r {} \;
+  794  find -iname kdevtmpfsi -exec chmod augo+r {} \;
+  795  find -iname kdevtmpfsi -exec chmod 1 {} \;
+  796  ls -l -a
+  797  find ~/ -type f -name "kdev"
+  798  find /tmp -type f -name "kdev"
+  799  find /tmp -type f -name "kdev*"
+  800  find / -type f -name "kdev*"
+  801  find / -type f -name "kdevtmpfsi*"
+  802  find / -type f -name "kdevtmpfsi*" -exec rm -fv {} \;
+  803  pkill "kdev"
+  804  find / -type f -name "kdevtmpfsi*" -exec rm -fv {} \;
+  805  find / -type f -name "kinsing*" -exec rm -fv {} \;
+  806  rm /var/spool/cron/crontabs/www-data
+  807  touch /tmp/kdevtmpfsi && touch /tmp/kinsing
+  808  echo "kdevtmpfsi is fine now" > /tmp/kdevtmpfsi
+  809  echo "kinsing is fine now" > /tmp/kinsing
+  810  chmod 0444 /tmp/kdevtmpfsi
+  811  chmod 0444 /tmp/kinsing
+  812  composer update facade/ignition
+  813  pkill "kdev"
+  814  find / -type f -name "kdevtmpfsi*" -exec rm -fv {} \;
+  815  find / -type f -name "kinsing*" -exec rm -fv {} \;
+  816  rm /var/spool/cron/crontabs/www-data
+  817  touch /tmp/kdevtmpfsi && touch /tmp/kinsing
+  818  echo "kdevtmpfsi is fine now" > /tmp/kdevtmpfsi
+  819  echo "kinsing is fine now" > /tmp/kinsing
+  820  chmod 0444 /tmp/kdevtmpfsi
+  821  chmod 0444 /tmp/kinsing
+  822  composer update facade/ignition
+  823  ls -l -a
+  824  reboot
+  825  cd /tmp
+  826  ls -l -a
+  827  rm -r *
+  828  rm -r .
+  829  rm -r .*
+  830  ls -l -a
+  831  top
+  832  pkill "kdev"
+  833  find / -type f -name "kdevtmpfsi*" -exec rm -fv {} \;
+  834  find / -type f -name "kinsing*" -exec rm -fv {} \;
+  835  rm /var/spool/cron/crontabs/www-data
+  836  touch /tmp/kdevtmpfsi && touch /tmp/kinsing
+  837  echo "kdevtmpfsi is fine now" > /tmp/kdevtmpfsi
+  838  echo "kinsing is fine now" > /tmp/kinsing
+  839  chmod 0444 /tmp/kdevtmpfsi
+  840  chmod 0444 /tmp/kinsing
+  841  composer update facade/ignition
+  842  top
+  843  service postgresql start
+  844  top
+  845  find /var/www/* -type d -exec chown -R root {} \;
+  846  find /var/www/* -type f -exec chown -R root {} \;
+  847  find /var/www/* -type d -exec chmod augo+rwx {} \;
+  848  find /var/www/* -type f -exec chmod augo+rwx {} \;
+  849  top
+  850  ls -l -a /tmp
+  851  top
+  852  service postgresql start
+  853  cd /
+  854  ls -l -a
+  855  nano kill_kinsing_malware.sh
+  856  chmod 777 kill_kinsing_malware.sh
+  857  ls -l -a /tmp
+  858  top
+  859  service postgresql start
+  860  top
+  861  sudo systemctl start postgresql.service
+  862  sudo systemctl stop postgresql.service
+  863  sudo systemctl disable postgresql.service
+  864  cd /tmp
+  865  top
+  866  cd /etc/apache2/sites-available/
+  867  nano /etc/apache2/sites-available/testtask.com
+  868  cd /var/www/
+  869  find * -type d -exec chown -R root {} \;
+  870  find * -type f -exec chown -R root {} \;
+  871  find * -type d -exec chmod augo+rwx {} \;
+  872  find * -type f -exec chmod augo+rwx {} \;
+  873  service apache2 restart
+  874  cd /var/log/apache2
+  875  ls -l -a
+  876  nano /var/log/apache2/error.log
+  877  cd /var/www/
+  878  ls
+  879  cd flyid
+  880  ls -l -a
+  881  mv ws-sokb /var/www/ws-sokb
+  882  nano /var/log/apache2/error.log
+  883  ls
+  884  mv lk /var/www/lk
+  885  nano /etc/apache2/sites-available/testtask.com
+  886  nano /var/log/apache2/error.log
+  887  cd /var/log
+  888  ls -l -a
+  889  nano /var/log/apache2/error.log
+  890  find * -type d -exec chown -R root {} \;
+  891  find * -type f -exec chown -R root {} \;
+  892  find * -type d -exec chmod augo+rwx {} \;
+  893  find * -type f -exec chmod augo+rwx {} \;
+  894  mv lk_old lk
+  895  mv lk lk_old
+  896  mv lk-new lk
+  897  nano /var/log/apache2/error.log
+  898  apt-get -y install gcc 
+  899  apt-get -y install openssl-devel
+  900  apt-get -y install php-devel
+  901  apt-get -y install php-cli
+  902  apt-get -y install php-pear
+  903  pecl channel-update pecl.php.net
+  904  pecl install mongodb
+  905  php -v
+  906  apt-get install php8.x-dev
+  907  apt-get install php8.1-dev
+  908  pecl install mongodb
+  909  apt-get install openssl8.1-devel
+  910  sudo apt-get install php-dev
+  911  pecl install mongodb
+  912  sudo pecl install mongodb
+  913  apt-get -y install mongodb
+  914  sudo apt-get install gnupg cur
+  915  sudo apt-get update
+  916  sudo apt-get install -y mongodb-org
+  917  cat /etc/lsb-release
+  918  sudo apt-get install gnupg
+  919  sudo apt-get install curl
+  920  curl -fsSL https://www.mongodb.org/static/pgp/server-7.0.asc |    sudo gpg -o /usr/share/keyrings/mongodb-server-7.0.gpg    --dearmor
+  921  echo "deb [ arch=amd64,arm64 signed-by=/usr/share/keyrings/mongodb-server-7.0.gpg ] https://repo.mongodb.org/apt/ubuntu jammy/mongodb-org/7.0 multiverse" | sudo tee /etc/apt/sources.list.d/mongodb-org-7.0.list
+  922  nano /etc/apt/sources.list.d/mongodb-org-7.0.list
+  923  sudo apt-get update
+  924  sudo apt-get install -y mongodb-org
+  925  cd /tmp/apt-dpkg-install-UNwOV4/
+  926  cd /tmp
+  927  top
+  928  df -h
+  929  pkill "python"
+  930  nano /etc/apt/sources.list.d/mongodb-org-7.0.list
+  931  sudo apt-get update
+  932  sudo apt-get install -y mongodb-org
+  933  sudo pecl install mongodb
+  934  nano /etc/php/8.1/apache2/php.ini
+  935  service apache2 restart
+  936  cd /var/www/
+  937  cd /var/www/lk/web
+  938  php tmp.php
+  939  nano /etc/php/8.1/apache2/php.ini
+  940  reboot
+  941  cd /var/www/lk/web
+  942  php tmp.php
+  943  sudo service mongod start
+  944  php tmp.php
+  945  sudo service mongod stop
+  946  sudo apt-get install libcurl4-openssl-dev pkg-config libssl-dev libsslcommon2-dev
+  947  sudo apt-get install libcurl4-openssl-dev
+  948  sudo apt-get install pkg-config
+  949  sudo apt-get install libssl-dev
+  950  cd /var/www/lk/web
+  951  php tmp.php
+  952  sudo pecl install mongodb
+  953  sudo apt install php-dev php-pear
+  954  sudo apt install php-dev
+  955  sudo apt install php-pear
+  956  apt-get install pkg-config
+  957  php tmp.php
+  958  ccomposer
+  959  composer
+  960  cd /var/www
+  961  ls
+  962  cd /var/www/tmp_mongodb
+  963  php tmp.php
+  964  composer require mongodb/mongodb
+  965  php -m
+  966  mv /etc/php/8.1/apache2/php.ini /etc/php/8.1/apache2/_php.ini
+  967  php -m
+  968  mv /etc/php/8.1/apache2/_php.ini /etc/php/8.1/apache2/php.ini
+  969  php -m
+  970  php tmp.php
+  971  composer require mongodb/mongodb
+  972  php tmp.php
+  973  ping 89.108.110.87
+  974  ping 89.108.110.87:27017
+  975  telnet
+  976  sudo systemctl status mongod
+  977  service mongodb start
+  978  sudo systemctl start mongod
+  979  sudo systemctl status mongod
+  980  mongosh 
+  981  sudo nano /etc/mongod.conf 
+  982  sudo systemctl restart mongod
+  983  sudo nano /etc/mongod.conf 
+  984  sudo systemctl restart mongod
+  985  ip a
+  986  php tmp.php
+  987  nano /var/log/apache2/error.log
+  988  top
+  989  ls -l -a
+  990  pwd
+  991  nano install_rabbitmq.sh
+  992  chmod 777 install_rabbitmq.sh
+  993  /root/install_rabbitmq.sh
+  994  top
+  995  systemctl start rabbitmq-server
+  996  top
+  997  service rabbitmq-server stop
+  998  service rabbitmq-server start
+  999  service rabbitmq start
+ 1000  top
+ 1001  sudo netstat -tulpn | grep LISTEN
+ 1002  sudo lsof -i -P -n | grep LISTEN
+ 1003  ip a
+ 1004  top
+ 1005  cd /etc/rabbitmq/
+ 1006  ls -l -a
+ 1007  rabbitmq-diagnostics -q log_location
+ 1008  nano /var/log/rabbitmq/rabbit@2187527-cu30129.log
+ 1009  ls -l -a
+ 1010  nano rabbitmq.conf
+ 1011  service rabbitmq restart
+ 1012  service rabbitmq-server restart
+ 1013  rabbitmq-diagnostics -q log_location
+ 1014  nano /var/log/rabbitmq/rabbit@2187527-cu30129.log
+ 1015  top
+ 1016  cat /var/log/rabbitmq/rabbit@2187527-cu30129.log
+ 1017  nano /etc/rabbitmq/rabbitmq.conf
+ 1018  service rabbitmq-server restart
+ 1019  rabbitmqctl add_user "FlyIDWS"
+ 1020  rabbitmqctl list_users
+ 1021  rabbitmqctl set_permissions -p "FlyIDWS" "FlyIDWS" ".*" ".*" ".*"
+ 1022  rabbitmqctl add_vhost FlyIDWS
+ 1023  rabbitmqctl set_permissions -p "FlyIDWS" "FlyIDWS" ".*" ".*" ".*"
+ 1024  service rabbitmq-server restart
+ 1025  cat /var/log/rabbitmq/rabbit@2187527-cu30129.log
+ 1026  ping 89.108.110.87
+ 1027  top
+ 1028  cat /var/log/rabbitmq/rabbit@2187527-cu30129.log
+ 1029  sudo lsof -i -P -n | grep LISTEN
+ 1030  service rabbitmq-server stop
+ 1031  sudo lsof -i -P -n | grep LISTEN
+ 1032  service apache2 restart
+ 1033  cd /var/www
+ 1034  ls -la
+ 1035  cd test_task_laravel
+ 1036  ls -la
+ 1037  top
+ 1038  laravel new merionet
+ 1039  laravel
+ 1040  composer create-project --prefer-dist laravel/laravel merionet
+ 1041  find * -type d -exec chmod augo+rwx {} \;
+ 1042  find * -type f -exec chmod augo+rwx {} \;
+ 1043  find * -type d -exec chmod augo+rwx {} \; && 
+ 1044  mkdir "/var/www/test_task_laravel/merionet/app/Http/Controllers/Web"
+ 1045  php artisan make:controller Web/HomeController -r
+ 1046  find * -type d -exec chmod augo+rwx {} \; && find * -type f -exec chmod augo+rwx {} \;
+ 1047  php -v
+ 1048  php artisan --version
+ 1049  cd ..
+ 1050  sudo git init --initial-branch=feature-academy-layout-views
+ 1051  git remote add origin https://github.com/jadenjoy/knowledge-base.git
+ 1052  composer create-project --prefer-dist laravel/laravel merionet_new "11.*"
+ 1053  rm -r -f merionet_new\.git
+ 1054  ls -la merionet_new
+ 1055  rm -r -f merionet_new\.*
+ 1056  ls -la merionet_new
+ 1057  composer create-project --prefer-dist laravel/laravel merionet_new "11.*"
+ 1058  composer create-project --prefer-dist laravel/laravel merionet_new
+ 1059  cd merionet_new
+ 1060  sudo git init --initial-branch=feature-academy-layout-views
+ 1061  git remote add origin https://github.com/jadenjoy/knowledge-base.git
+ 1062  git pull https://github.com/jadenjoy/knowledge-base.git feature-academy-layout-views
+ 1063  ls -al ~/.ssh
+ 1064  git pull https://github.com/jadenjoy/knowledge-base.git feature-academy-layout-views
+ 1065  ssh-add ~/.ssh/id_rsa
+ 1066  eval "$(ssh-agent -s)"
+ 1067  ssh-add ~/.ssh/id_rsa
+ 1068  ssh -T git@github.com
+ 1069  nano .git/config
+ 1070  git pull https://github.com/jadenjoy/knowledge-base.git feature-academy-layout-views
+ 1071  cp -r --no-clobber /var/www/test_task_laravel/merionet/* /var/www/test_task_laravel/merionet_new
+ 1072  sudo git init --initial-branch=feature-academy-layout-views
+ 1073  git remote add origin https://github.com/jadenjoy/knowledge-base.git
+ 1074  git add .
+ 1075  git config user.email "mail4github@advertising-page.com"
+ 1076  git status
+ 1077  git reset --hard
+ 1078  nano /etc/apache2/sites-available/merionet.com
+ 1079  cat /var/log/apache2/error.log
+ 1080  git add app/Http/Controllers/Web/HomeController.php
+ 1081  git -f add app/Http/Controllers/Web/HomeController.php
+ 1082  git add -f app/Http/Controllers/Web/HomeController.php
+ 1083  git push --set-upstream origin feature-academy-layout-views
+ 1084  rpm -Uvh https://dl.fedoraproject.org/pub/epel/epel-release-latest-9.noarch.rpm
+ 1085  apt install rpm
+ 1086  apt install -y https://rpms.remirepo.net/enterprise/remi-release-9.rpm
+ 1087  apt module list php
+ 1088  apt --help
+ 1089  apt list php
+ 1090  php -v
+ 1091  update-alternatives --config php
+ 1092  apt-get install php8.1 php8.1-fpm php8.1-cli -y
+ 1093  apt-get install php8.2 php8.2-fpm php8.2-cli -y
+ 1094  update-alternatives --config php
+ 1095  apt-get install php8.3 php8.3-fpm php8.3-cli -y
+ 1096  lsb_release -a
+ 1097  sudo dpkg -l | grep php | tee packages.txt
+ 1098  cat packages.txt
+ 1099  add-apt-repository ppa:ondrej/php
+ 1100  apt update
+ 1101  apt install php8.3 php8.3-cli php8.3-{bz2,curl,mbstring,intl}
+ 1102  update-alternatives --config php
+ 1103  apt install libapache2-mod-php8.3
+ 1104  php --version 
+ 1105  update-alternatives --config php
+ 1106  php --version 
+ 1107  composer create-project --prefer-dist laravel/laravel merionet_11 "11.*"
+ 1108  a2enconf php8.3-fpm
+ 1109  apt install php8.3-{calendar,ctype,exif,ffi,fileinfo,ftp,gettext,iconv,pdo,phar,posix,shmop,sockets,sysvmsg,sysvsem,sysvshm,tokenizer}
+ 1110  install php8.3-{cli,pdo,mysql,zip,gd,mbstring,curl,xml,bcmath,common}
+ 1111  apt install php8.3-{cli,pdo,mysql,zip,gd,mbstring,curl,xml,bcmath,common}
+ 1112  php -r "copy('https://getcomposer.org/installer', 'composer-setup.php');"
+ 1113  php composer-setup.php --install-dir=/usr/local/bin --filename=composer
+ 1114  composer --version
+ 1115  rm -r merionet_11
+ 1116  composer update
+ 1117  apt-get install php8.2 php8.2-fpm php8.2-cli -y
+ 1118  history
+ 1119  apt install php8.2-{calendar,ctype,exif,ffi,fileinfo,ftp,gettext,iconv,pdo,phar,posix,shmop,sockets,sysvmsg,sysvsem,sysvshm,tokenizer}
+ 1120  apt install php8.2-{cli,pdo,mysql,zip,gd,mbstring,curl,xml,bcmath,common}
+ 1121  update-alternatives --config php
+ 1122  composer create-project --prefer-dist laravel/laravel merionet_11 "11.*"
+ 1123  composer update
+ 1124  composer --ignore-platform-req=php update
+ 1125  update-alternatives --set php /usr/bin/php8.2
+ 1126  update-alternatives --set phar /usr/bin/phar8.2
+ 1127  update-alternatives --set phar.phar /usr/bin/phar.phar8.2
+ 1128  update-alternatives --set phpize /usr/bin/phpize8.2
+ 1129  update-alternatives --set php-config /usr/bin/php-config8.2
+ 1130  systemctl restart apache2
+ 1131  a2dismod php8.1
+ 1132  systemctl restart apache2
+ 1133  a2enmod php8.2
+ 1134  nano /usr/bin/php.default
+ 1135  nano /etc/apache2/apache2.conf
+ 1136  sudo update-alternatives --set php /usr/bin/php8.2
+ 1137  a2enmod php8.2
+ 1138  a2enmod php8.3
+ 1139  sudo apt-get -y install php-mysql, php-xml, php-gd, php-json, curl, libcurl3, libcurl3-dev, php-curl, php-mbstring, mysql-client, php-zip
+ 1140  apt install php8.2-{mysql,xml,gd,json,curl,libcurl3,libcurl3-dev,mbstring,mysql-client,zip}
+ 1141  apt install php8.2-{mysql,xml,gd,json,curl,mbstring,zip}
+ 1142  apt install php8.2-{mysql,xml,gd,curl,mbstring,zip}
+ 1143  apt install php8.2-{sqlite}
+ 1144  apt install php8.2-{sqlite3}
+ 1145  apt install php-sqlite3
+ 1146  apt install php8.2-sqlite3
+ 1147  php -m | grep pdo_sqlite
+ 1148  nano /etc/php/8.2/apache2/php.ini
+ 1149  sudo apt install sqlite3
+ 1150  nano /etc/php/8.1/apache2/php.ini
+ 1151  mkdir /etc/php/8.2/apache2/
+ 1152  chmod 777 /etc/php/8.2/apache2/
+ 1153  cp -r -f -p /etc/php/8.1/apache2/php.ini /etc/php/8.2/apache2/php.ini
+ 1154  nano /etc/php/8.3/apache2/php.ini
+ 1155  apt install php8.3-{mysql,xml,gd,curl,mbstring,zip,sqlite3}
+ 1156  nano /etc/php/8.3/apache2/php.ini
+ 1157  git init --initial-branch=feature-academy-layout-views
+ 1158  git pull https://github.com/jadenjoy/knowledge-base.git feature-academy-layout-views
+ 1159  git add .
+ 1160  git reset --hard
+ 1161  cp -r --no-clobber /var/www/test_task_laravel/merionet11/* /var/www/test_task_laravel/merionet_git
+ 1162  cp -r --no-clobber /var/www/test_task_laravel/merionet_11/* /var/www/test_task_laravel/merionet_git
+ 1163  php artisan key:generate
+ 1164  git status
+ 1165  git commit -m "initial commit"
+ 1166  git config user.email "mail4github@advertising-page.com"
+ 1167  git commit -m "initial commit"
+ 1168  git push --set-upstream origin feature-academy-layout-views
+ 1169  git config --global user.email "mail4github@advertising-page.com"
+ 1170  git config --global user.name "Pavel J"
+ 1171  git commit -m "initial commit"
+ 1172  git push --set-upstream origin feature-academy-layout-views
+ 1173  git commit -m "initial commit"
+ 1174  git push --set-upstream origin feature-academy-layout-views
+ 1175  git add . && git commit -m "created layout"
+ 1176  git push --set-upstream origin feature-academy-layout-views
+ 1177  cd /var/www/test_task_laravel/merionet_git
+ 1178  git add . && git commit -m "changed layout"
+ 1179  git push --set-upstream origin feature-academy-layout-views
+ 1180  composer require butschster/meta-tags
+ 1181  php artisan meta-tags:install
+ 1182  cd /var/www/test_task_laravel/merionet_git && composer require butschster/meta-tags
+ 1183  php artisan meta-tags:install
+ 1184  git add app/Http/Controllers/Web/HomeController.php
+ 1185  git commit -m "removed void methods from HomeController"
+ 1186  git push --set-upstream origin feature-academy-layout-views
+ 1187  git status
+ 1188  git diff
+ 1189  git status
+ 1190  git add .
+ 1191  git diff app/Providers/MetaTagsServiceProvider.php
+ 1192  git status
+ 1193  git push --set-upstream origin feature-academy-layout-views
+ 1194  systemctl list-units --type=service --state=active
+ 1195  sudo netstat -tulpn | grep LISTEN
+ 1196  rabbitmqctl help
+ 1197  rabbitmqctl list_users
+ 1198  rabbitmqctl list_connections
+ 1199  rabbitmqctl change_password
+ 1200  rabbitmqctl change_password FlyIDWS N5obi2BvQMTmkdwApY_GS-X9G47JWsgYhStm_0LGJCwp7K-Wz-
+ 1201  rabbitmqct
+ 1202  rabbitmqctl report
+ 1203  rabbitmqctl list_connections
+ 1204  scp
+ 1205  systemctl list-units --type=service --state=active
+ 1206  top
+ 1207  df  -h
+ 1208  mongodump
+ 1209  mongodump --db=Library --uri="mongodb://Library:VUK4JTZMO7ldkKu7OYGUYFkRZxSjY424zhiQdlYmHMY%3D@10.126.3.30:27017/?authSource=Library&replicaSet=rs0&directConnection=true" --archive="/var/www/Library.mng"
+ 1210  nano /etc/hosts
+ 1211  systemctl list-units --type=service --state=active
+ 1212  ls -la
